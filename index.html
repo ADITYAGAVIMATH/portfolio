@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aditya Gavimath | UAV Systems Engineer</title>
+
+<style>
+:root{
+--bg:#030303;
+--panel:#0b0b0b;
+--card:#121212;
+--border:#232323;
+--accent:#d4af37;
+--text:#f5f5f5;
+--muted:#a1a1aa;
+}
+
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+
+body{
+background:
+radial-gradient(circle at top right, rgba(212,175,55,.08), transparent 30%),
+radial-gradient(circle at bottom left, rgba(139,115,85,.06), transparent 35%),
+#030303;
+color:var(--text);
+font-family:Inter,Segoe UI,Arial,sans-serif;
+line-height:1.7;
+}
+
+nav{
+position:fixed;
+top:0;
+width:100%;
+z-index:999;
+background:rgba(3,3,3,.92);
+backdrop-filter:blur(12px);
+border-bottom:1px solid var(--border);
+padding:18px 6%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.logo{font-weight:700}
+
+nav a{
+color:#fff;
+text-decoration:none;
+margin-left:20px;
+font-size:.95rem;
+transition:.3s;
+}
+
+nav a:hover{
+color:var(--accent);
+}
+
+section{
+padding:90px 8%;
+}
+
+.hero{
+min-height:100vh;
+display:grid;
+grid-template-columns:1.3fr .8fr;
+gap:50px;
+align-items:center;
+}
+
+.hero img{
+width:100%;
+max-width:360px;
+border-radius:20px;
+border:1px solid var(--border);
+}
+
+.tag{
+color:var(--accent);
+letter-spacing:2px;
+text-transform:uppercase;
+font-size:.85rem;
+}
+
+h1{
+font-size:4rem;
+line-height:1.1;
+margin:12px 0;
+}
+
+h2{
+font-size:2.2rem;
+margin-bottom:25px;
+color:var(--accent);
+}
+
+p{color:var(--muted)}
+
+.btn{
+display:inline-block;
+padding:12px 20px;
+margin:10px 10px 0 0;
+background:var(--accent);
+color:#111;
+text-decoration:none;
+border-radius:10px;
+font-weight:700;
+}
+
+.stats{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:15px;
+}
+
+.stat{
+text-align:center;
+background:var(--panel);
+padding:25px;
+border-radius:15px;
+border:1px solid var(--border);
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:20px;
+}
+
+.card{
+background:var(--card);
+padding:24px;
+border-radius:18px;
+border:1px solid var(--border);
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-6px);
+border-color:var(--accent);
+}
+
+.project img{
+width:100%;
+height:220px;
+object-fit:cover;
+border-radius:12px;
+margin-bottom:15px;
+}
+
+.timeline{
+border-left:3px solid var(--accent);
+padding-left:25px;
+}
+
+.timeline .item{
+margin-bottom:30px;
+}
+
+footer{
+text-align:center;
+padding:40px;
+border-top:1px solid var(--border);
+}
+
+@media(max-width:900px){
+.hero{
+grid-template-columns:1fr;
+}
+.stats{
+grid-template-columns:repeat(2,1fr);
+}
+h1{
+font-size:2.6rem;
+}
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+<div class="logo">Aditya Gavimath</div>
+<div>
+<a href="#about">About</a>
+<a href="#stack">Tech Stack</a>
+<a href="#projects">Projects</a>
+<a href="#timeline">Timeline</a>
+<a href="#research">Research</a>
+<a href="#contact">Contact</a>
+</div>
+</nav>
+
+<section class="hero">
+<div>
+<div class="tag">Autonomous UAV Systems</div>
+
+<h1>Aditya Gavimath</h1>
+
+<h3>Autonomous UAV Systems • Navigation • Perception • Robotics</h3>
+<br>
+
+<p>
+Computer Science Engineering student at KLE Technological University focused on autonomous aerial systems, GPS-denied navigation, UAV autonomy, computer vision and intelligent robotics. My work combines PX4, ROS 2, MAVLink, OpenVINS, depth sensing and embedded computing platforms to develop autonomous mission capabilities for real-world UAV applications.
+</p>
+
+<a class="btn" href="https://github.com/ADITYAGAVIMATH">GitHub</a>
+<a class="btn" href="mailto:adityargavimath8073@gmail.com">Email</a>
+</div>
+
+<div>
+<img src="images/profile.jpg" alt="Profile">
+</div>
+</section>
+
+<section>
+<div class="stats">
+
+<div class="stat">
+<h2>AIR 1</h2>
+<p>All India Rank<br>Aerothon 2025</p>
+</div>
+
+<div class="stat">
+<h2>AIR 2</h2>
+<p>All India Rank<br>ADDC 2026</p>
+</div>
+
+<div class="stat">
+<h2>8+</h2>
+<p>Projects</p>
+</div>
+
+<div class="stat">
+<h2>3</h2>
+<p>Research Tracks</p>
+</div>
+
+</div>
+</section>
+
+<section id="about">
+<h2>About</h2>
+<p>
+My primary interests lie in autonomous UAV navigation, perception systems, GPS-denied operation and mission automation. I have contributed to national-level aerospace competitions and research-driven projects involving autonomous payload delivery, object detection, visual-inertial odometry, simulation environments and obstacle avoidance systems.
+</p>
+</section>
+
+<section id="stack">
+<h2>Technology Stack</h2>
+
+<div class="grid">
+<div class="card"><h3>Flight Systems</h3><p>PX4, Pixhawk, MAVLink, Mission Planning, Autonomous Payload Delivery</p></div>
+<div class="card"><h3>Robotics</h3><p>ROS 2, Gazebo, OpenVINS, Visual-Inertial Odometry, EKF Integration</p></div>
+<div class="card"><h3>Perception</h3><p>YOLO, OpenCV, Object Detection, Computer Vision</p></div>
+<div class="card"><h3>Embedded Computing</h3><p>Raspberry Pi, Axon Vicharak, NVIDIA Jetson, Linux</p></div>
+<div class="card"><h3>Sensors</h3><p>Depth Cameras, LiDAR, GPS, Optical Flow</p></div>
+<div class="card"><h3>Simulation & Development</h3><p>MATLAB, Simulink, RoadRunner, Python, Git</p></div>
+</div>
+</section>
+
+<section id="projects">
+<h2>Projects</h2>
+
+<div class="grid">
+
+<div class="card project">
+<img src="images/aerothon.jpg">
+<h3>Aerothon 2025 — AIR 1</h3>
+<p>Autonomous mission architecture, perception-driven workflows, object detection and autonomous payload delivery development.</p>
+</div>
+
+<div class="card project">
+<img src="images/addc.jpg">
+<h3>ADDC 2026 — AIR 2</h3>
+<p>ROS 2 and Gazebo based autonomy development, mission planning and UAV system integration.</p>
+</div>
+
+<div class="card project">
+<h3>DDC Aircraft Competition</h3>
+<p>Aircraft systems integration, avionics planning and competition-focused mission architecture.</p>
+</div>
+
+<div class="card project">
+<img src="images/isro.jpg">
+<h3>ISRO GPS-Denied Research</h3>
+<p>OpenVINS integration, visual-inertial odometry and navigation in GNSS-denied environments.</p>
+</div>
+
+<div class="card project">
+<h3>Autonomous Drone Obstacle Avoidance</h3>
+<p>Depth sensing and Vector Field Histogram based navigation for obstacle avoidance and autonomous path planning.</p>
+</div>
+
+<div class="card project">
+<h3>Kinetic Sculpture</h3>
+<p>Interdisciplinary mechanical and electronics project developed during second semester.</p>
+</div>
+
+<div class="card project">
+<h3>Automatic Fire Detection & Alarm System</h3>
+<p>ESIOT project focused on event detection, monitoring and automated alert generation.</p>
+</div>
+
+</div>
+</section>
+
+<section id="timeline">
+<h2>Timeline</h2>
+
+<div class="timeline">
+<div class="item"><h3>2024</h3><p>Kinetic Sculpture</p></div>
+<div class="item"><h3>2025</h3><p>Aerothon 2025 — AIR 1</p></div>
+<div class="item"><h3>2025</h3><p>DDC Aircraft Competition</p></div>
+<div class="item"><h3>2026</h3><p>Automatic Fire Detection & Alarm System</p></div>
+<div class="item"><h3>2026</h3><p>ADDC 2026 — AIR 2</p></div>
+<div class="item"><h3>2026-Present</h3><p>ISRO GPS-Denied Navigation Research</p></div>
+<div class="item"><h3>2026-Present</h3><p>Autonomous Obstacle Avoidance Research</p></div>
+</div>
+</section>
+
+<section id="research">
+<h2>Research & Publications</h2>
+
+<div class="grid">
+<div class="card">
+<h3>GPS-Denied UAV Navigation</h3>
+<p>Visual-Inertial Odometry, OpenVINS and PX4-based navigation systems.</p>
+</div>
+
+<div class="card">
+<h3>Autonomous Obstacle Avoidance</h3>
+<p>Depth sensing, environment perception and VFH path planning.</p>
+</div>
+
+<div class="card">
+<h3>Research Publications</h3>
+<p>Ongoing work related to autonomous UAV systems and competition research.</p>
+</div>
+</div>
+</section>
+
+<section id="contact">
+<h2>Contact</h2>
+<p>Email: adityargavimath8073@gmail.com</p>
+<p>GitHub: github.com/ADITYAGAVIMATH</p>
+<p>KLE Technological University</p>
+</section>
+
+<footer>
+<p><strong>Aditya Gavimath</strong></p>
+<p>Autonomous UAV Systems</p>
+<p>KLE Technological University</p>
+<p>PX4 • ROS 2 • OpenVINS • Computer Vision</p>
+</footer>
+
+</body>
+</html>
